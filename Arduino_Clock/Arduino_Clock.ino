@@ -7,7 +7,7 @@ void setup() {
 }
 
 void loop() {
-  delay(1);
+  delay(1000);
   Sekunden = Sekunden + 1;
   Serial.print(Stunden);
   Serial.print(" : ");
@@ -26,11 +26,11 @@ void loop() {
     Stunden = 0;
   }
   //Weck-Zeit hier bearbeiten
-  //Wenn "if (Stunden > 6)" und "if (Minuten > 29) da steht, klingelt der Wecker um 7:30 
+  //Wenn "if (Stunden > 6)" und "if (Minuten > 29) da steht, klingelt der Wecker um 7:30
   if (Stunden > -1) {
-    if (minuten > 0) {
+    if (Minuten > 0) {
       noTone(11);
-      tone(6, 499, 130);
+      tone(6, 499, 140);
       delay(100);
     }
   }
