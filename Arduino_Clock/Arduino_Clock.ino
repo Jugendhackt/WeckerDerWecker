@@ -24,5 +24,13 @@ void loop() {
   if (Stunden > 23)  {
     Stunden = 0;
   }
+  //Weck-Zeit hier bearbeiten
+  if (Stunden > -1) {
+    if (minuten > 0) {
+      noTone(11);
+      tone(6, 499, 130);
+      delay(100);
+    }
+  }
 }
 
