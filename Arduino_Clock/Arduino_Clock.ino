@@ -1,3 +1,4 @@
+//Sorry,ihr müsst das Programm um genau 0 Uhr starten
 int Sekunden = 0;
 int Minuten = 0;
 int Stunden = 0;
@@ -25,6 +26,7 @@ void loop() {
     Stunden = 0;
   }
   //Weck-Zeit hier bearbeiten
+  //Wenn "if (Stunden > 6)" und "if (Minuten > 29) da steht, klingelt der Wecker um 7:30 
   if (Stunden > -1) {
     if (minuten > 0) {
       noTone(11);
